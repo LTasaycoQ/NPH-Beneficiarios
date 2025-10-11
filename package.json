@@ -1,15 +1,14 @@
 {
   "name": "nph-dashboard",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "e2e": "playwright test",
-    "serve:ssr:nphDashboard": "node dist/nph-dashboard/server/server.mjs"
-  },
+ "scripts": {
+  "start": "ng serve",
+  "build": "ng build",
+  "test": "ng test",
+  "test:e2e": "playwright test",
+  "test:ci": "start-server-and-test start http://localhost:4200 test:e2e"
+},
+
   "private": true,
   "dependencies": {
     "@angular/common": "^17.3.0",
@@ -52,6 +51,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.19.87",
     "autoprefixer": "^10.4.20",
+    "http-server": "^14.1.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -59,6 +59,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.49",
+    "start-server-and-test": "^2.0.12",
     "tailwindcss": "^3.4.15",
     "typescript": "~5.4.2"
   }

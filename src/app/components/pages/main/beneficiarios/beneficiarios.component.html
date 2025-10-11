@@ -234,7 +234,7 @@
             <!-- Acciones -->
             <div class="flex gap-1 justify-center">
               <!-- boton para cambiar de estado -->
-              <button (click)="toggleEstado(beneficiario)"
+              <button id="btn_eliminar" (click)="toggleEstado(beneficiario)"
                 [ngClass]="beneficiario.state === 'A' ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600'"
                 class="text-white rounded px-2 py-1 text-xs">
                 <i [ngClass]="beneficiario.state === 'A' ? 'fas fa-trash' : 'fas fa-undo'"></i>
