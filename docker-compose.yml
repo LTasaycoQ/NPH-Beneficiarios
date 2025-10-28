@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  beneficiary-service:
+    image: imagen_front:latest
+    ports:
+      - "4200:4200"
