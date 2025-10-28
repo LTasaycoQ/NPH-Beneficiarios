@@ -2,12 +2,13 @@
   "name": "nph-dashboard",
   "version": "0.0.0",
  "scripts": {
-  "start": "ng serve",
-  "build": "ng build",
+  "build": "ng build --configuration production && ng run nph-dashboard:server:production",
+  "start": "node dist/nph-dashboard/server/main.js",
   "test": "ng test",
   "test:e2e": "playwright test",
-  "test:ci": "start-server-and-test start http://localhost:4200 test:e2e"
+  "test:ci": "start-server-and-test start http://localhost:4000 test:e2e"
 },
+
 
   "private": true,
   "dependencies": {
