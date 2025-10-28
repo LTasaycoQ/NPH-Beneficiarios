@@ -4,3 +4,6 @@
 
 [[plugins]]
   package = "@netlify/angular-runtime"
+
+  [plugins.inputs]
+    ssr = false
