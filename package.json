@@ -3,7 +3,8 @@
   "version": "0.0.0",
  "scripts": {
   "start": "ng serve",
-  "build": "ng build",
+  "build": "ng build --configuration production",
+
   "test": "ng test",
   "test:e2e": "playwright test",
   "test:ci": "start-server-and-test start http://localhost:4200 test:e2e"
